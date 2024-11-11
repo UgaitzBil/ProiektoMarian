@@ -1,6 +1,6 @@
 package com.mycompany.proiekto;
 
-import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -30,14 +30,20 @@ public class SecondaryController {
     @FXML
     private Button btnstart;
     
-    @FXML
-    private GridPane sudokuGrid;
+        @FXML
+    private GridPane sudokuGrid; // Asegúrate de que esté vinculado correctamente en el FXML
 
     @FXML
     private void initialize() {
-        // Crear una cuadrícula 9x9 de etiquetas
         
+        for (int row = 0; row < 9; row++) {
+            for (int col = 0; col < 9; col++) {
+                Label label = new Label();
+                label.setText(""); 
+                label.setPrefSize(60, 60); 
+                label.setStyle("-fx-border-color: black; -fx-alignment: center;"); 
+                sudokuGrid.add(label, col, row); 
+            }
+        }
     }
-
-
 }
