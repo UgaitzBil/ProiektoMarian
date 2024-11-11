@@ -50,7 +50,8 @@ public class SecondaryController {
             // Leer el archivo JSON
             Gson gson = new Gson();
             FileReader reader = new FileReader("C:\\Users\\2AM3-4\\Documents\\NetBeansProjects\\Proiekto\\src\\main\\java\\modelo\\jsonSudokus.json"); // Cambia la ruta al archivo
-            
+               
+            System.out.println("commit de prueba aitor");
             // Parsear el archivo JSON y obtener el array de Sudokus
             JsonArray root = JsonParser.parseReader(reader).getAsJsonArray();
             
