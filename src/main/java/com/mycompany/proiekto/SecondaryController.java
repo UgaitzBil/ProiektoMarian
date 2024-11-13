@@ -92,7 +92,7 @@ public class SecondaryController {
     
     private void nigger () {
         for (int i = 0; i < 5; i++) {
-            System.out.println("nigger jijoji");
+            System.out.println("otra prueba mas");
         }
     }
 }
